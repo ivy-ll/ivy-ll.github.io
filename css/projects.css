@@ -1,7 +1,25 @@
 #proj-head {
   font-size: 2.5vw;
   text-align: center;
-  margin-top: -3%;
+  margin-top: -2px;
+}
+
+.sad-ham {
+  max-width: 5vw;
+  max-height: 5vw;
+  display: flex;
+  margin-top: -8vw;
+  margin-left: 54vw;
+}
+
+#sad-ham1 {
+  margin-top: -8vw;
+  margin-left: 54vw;
+}
+
+#sad-ham2 {
+  margin-top: -5vw;
+  margin-left: 40.3vw;
 }
 
 /* contact info */
@@ -23,7 +41,7 @@
 }
 
 .contact-text:hover {
-  color: #4f644d;
+  color: #2b372a;
   text-shadow: 4px 4px #fff5c8;
 }
 
@@ -36,7 +54,7 @@
 }
 
 #prj-bg1 {
-  margin-top: -9%;
+  margin-top: -10vw;
   padding-left: 4.5vw;
   z-index: -1;
 }
@@ -46,7 +64,7 @@
   height: 35vw;
   width: 30vw;
   margin-left: -30vw;
-  margin-top: -8vw;
+  margin-top: -9vw;
   position: absolute;
 }
 
