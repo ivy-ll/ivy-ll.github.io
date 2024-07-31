@@ -30,7 +30,7 @@
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  cursor: pointer;
+  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
   overflow: hidden;
   margin-left: -36.15vw;
   height: 25vw;

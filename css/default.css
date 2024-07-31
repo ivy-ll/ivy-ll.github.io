@@ -7,6 +7,7 @@ html {
 
 body {
   background-color: rgb(255, 248, 229);
+  cursor: url(https://cdn.custom-cursor.com/db/18960/32/cute-cat-shell-cursor.png), default;
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar-text:hover {
-  cursor: pointer;
+  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
   color: #4f644d;
   text-shadow: 4px 4px #fff5c8;
 }
