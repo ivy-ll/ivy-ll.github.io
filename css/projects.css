@@ -46,26 +46,14 @@
 }
 
 /* project description */
-.prj-bg {
-  max-width: 40vw;
-  max-height: 40vw;
-  flex: 0 0 auto;
-  position: relative;
-}
-
-#prj-bg1 {
-  margin-top: -10vw;
-  padding-left: 4.5vw;
-  z-index: -1;
-}
-
 .prj-info {
-  display: inline-block;
-  height: 35vw;
+  display: flex;
+  height: 35vh;
   width: 30vw;
-  margin-left: -30vw;
-  margin-top: -9vw;
+  margin-top: -17vh;
+  margin-left: 5vw;
   position: absolute;
+  z-index: 2;
 }
 
 #prj-info-txt {
@@ -74,3 +62,45 @@
   font-weight: bold;
   text-shadow: 4px 4px #e2a9af;
 }
+
+/* project background */
+.prj-bg {
+  max-width: 40vw;
+  max-height: 40vw;
+  flex: 0 0 auto;
+  position: absolute;
+}
+
+#prj-bg1 {
+  margin-top: -10vw;
+  padding-left: 4.5vw;
+  z-index: -1;
+}
+
+#prj-bg2 {
+  min-width: 80%;
+  min-height: 90%;
+  position: absolute;
+  margin-top: -17vh;
+  padding-left: 38vw;
+  z-index: 1;
+}
+
+#prj-bg3 {
+  min-width: 60%;
+  min-height: 30%;
+  position: absolute;
+  margin-top: 43vh;
+  margin-left: 1vw;
+  z-index: -1;
+}
+
+#prj-cat {
+  margin-top: 52vh;
+  margin-left: 33vw;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
