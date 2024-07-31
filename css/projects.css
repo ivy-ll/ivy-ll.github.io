@@ -29,6 +29,7 @@
   position: absolute;
   margin-top: -13vw;
   padding-left: 80vw;
+  z-index: 3;
 }
 
 .contact-text {
@@ -37,7 +38,7 @@
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
-  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
+  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer
 }
 
 .contact-text:hover {

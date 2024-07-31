@@ -1,0 +1,160 @@
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto !important;
+  border: 1px solid #222222;
+}
+
+.prof-follow-btn {
+  all: unset;
+  background: #4f644d;
+  display: inline-block;;
+  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
+  border: none;
+}
+
+.prof-follow-btn:focus {
+  outline: 0.5rem auto;
+}
+
+/* profile section */
+.profile {
+  padding: 5rem 0;
+}
+
+.profile::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.pfp {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.pfp img {
+  max-width: 25rem;
+  max-height: 25rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.profile-info,
+.profile-stats,
+.profile-bio {
+  float: right;
+}
+
+.prof-user {
+  display: inline-block;
+  font-size: 6rem;
+}
+
+.prof-follow-btn {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  border: 0.1rem solid #2b372a;
+  border-radius:  0.3rem;
+}
+
+.prof-stats {
+  margin-top: 2.3rem;
+}
+
+.profile-stats li {
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin-right: 4rem;
+}
+
+.profile-stats li:last-of-type {
+  margin-right: 0;
+}
+
+.profile-bio {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2.3rem;
+}
+
+.profile-name,
+.profile-stat-count {
+  font-weight: 600;
+}
+
+
+/* gallery section */
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-img {
+  width: 25vw;
+  height: 25vw;
+  top: 0;
+  left: 0;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@supports (display: grid) {
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 3rem;
+    align-items: center;
+  }
+
+  .profile-img {
+    grid-row: 1 / -1;
+  }
+
+  .profile-img,
+  .profile-info,
+  .profile-stats,
+  .profile-bio ,
+  .profile-item,
+  .gallery {
+    width: auto;
+    margin: 0;
+  }
+
+  .gallery {
+    grid-gap: 1rem;
+  }
+}
