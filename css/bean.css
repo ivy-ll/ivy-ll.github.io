@@ -36,7 +36,7 @@ img {
   grid-area: 2 / 3 / span 1 / span 2;
 }
 
-.btn {
+#prof-follow-btn {
   all: unset;
   background: #9faa9f;
   border: 0.1vw solid #2b372a;
@@ -53,13 +53,13 @@ img {
   grid-area: 2 / 4 / span 1 / span 1;
 }
 
-.prof-follow-btn:active {
+#prof-follow-btn:active {
   outline: 0.3rem #2b372a auto;
   background: #2b372a;
   color: #fff5c8;
 }
 
-.prof-follow-btn {
+#prof-follow-btn {
   position: absolute;
   bottom: 0;
 }
