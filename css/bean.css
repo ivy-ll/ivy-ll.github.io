@@ -20,102 +20,108 @@ img {
 .container {
   max-width: 150rem;
   margin: 0 auto !important;
-  border: 1px solid #222222;
-}
-
-.prof-follow-btn {
-  all: unset;
-  background: #4f644d;
-  display: inline-block;;
-  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
-  border: none;
-}
-
-.prof-follow-btn:focus {
-  outline: 0.5rem auto;
 }
 
 /* profile section */
 .profile {
-  padding: 5rem 0;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 5vw);
+  grid-auto-rows: 1fr;
 }
 
-.profile::after {
-  content: "";
-  display: block;
-  clear: both;
+.profile-user {
+  font-size: 1.5vw;
+  grid-area: 2 / 3 / span 1 / span 2;
+}
+
+.btn {
+  all: unset;
+  background: #9faa9f;
+  border: 0.1vw solid #2b372a;
+  border-radius:  0.7vw;
+  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
+  height: 1.7vw;
+  width: 6vw;
+  text-align: center;
+}
+
+.profile-follow {
+  position: relative;
+  font-size: 1.3vw;
+  grid-area: 2 / 4 / span 1 / span 1;
+}
+
+.prof-follow-btn:active {
+  outline: 0.3rem #2b372a auto;
+  background: #2b372a;
+  color: #fff5c8;
+}
+
+.prof-follow-btn {
+  position: absolute;
+  bottom: 0;
 }
 
 .pfp {
-  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3rem;
+  min-width: 25vw;
+  min-height: 25vw;
+  grid-area: 1 / 1 / span 2 / span 2;
 }
 
 .pfp img {
-  max-width: 25rem;
-  max-height: 25rem;
+  margin-top: 4vw;
+  width: 70%;
+  height: 70%;
+  top: 0;
+  bottom: 0;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
   align-items: center;
 }
 
-.profile-info,
-.profile-stats,
-.profile-bio {
-  float: right;
-}
-
-.prof-user {
+.profile-stats {
   display: inline-block;
-  font-size: 6rem;
-}
-
-.prof-follow-btn {
-  font-size: 1.4rem;
-  line-height: 1.8;
-  border: 0.1rem solid #2b372a;
-  border-radius:  0.3rem;
-}
-
-.prof-stats {
-  margin-top: 2.3rem;
-}
-
-.profile-stats li {
-  display: inline-block;
-  font-size: 2.5rem;
-  line-height: 1.5;
-  margin-right: 4rem;
-}
-
-.profile-stats li:last-of-type {
-  margin-right: 0;
+  position: relative;
+  font-size: 1.8vw;
+  margin-top: 1vw;
+  grid-area: 3 / 3 / span 1 / span 2;
 }
 
 .profile-bio {
-  font-size: 1.6rem;
+  font-size: 1.5vw;
   font-weight: 400;
-  line-height: 1.5;
-  margin-top: 2.3rem;
+  grid-area: 4 / 3 / span 1 / span 2;
 }
 
-.profile-name,
+.prof-name,
 .profile-stat-count {
   font-weight: 600;
 }
 
 
 /* gallery section */
+.decorative-line{
+  background-color: rgba(43, 55, 42, 0.32);
+  height: 1px;
+  max-width: 150rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  display: flex;
+}
 
 .gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 3rem;
+  grid-gap: 0.7rem;
 }
 
 .gallery-item {
@@ -123,38 +129,56 @@ img {
 }
 
 .gallery-img {
-  width: 25vw;
-  height: 25vw;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
-@supports (display: grid) {
-  .profile {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 3rem;
-    align-items: center;
-  }
 
-  .profile-img {
-    grid-row: 1 / -1;
-  }
+/* back to top */
+html {
+  scroll-behavior: smooth;
+}
 
-  .profile-img,
-  .profile-info,
-  .profile-stats,
-  .profile-bio ,
-  .profile-item,
-  .gallery {
-    width: auto;
-    margin: 0;
-  }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4f644d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+}
 
-  .gallery {
-    grid-gap: 1rem;
-  }
+
+/* scroll bar */
+body::-webkit-scrollbar {
+  display: inline-block;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff8e5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9fae9f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f644d;
 }
