@@ -58,3 +58,24 @@ body::-webkit-scrollbar {
   margin-right: auto;
   width: 50%;
 }
+
+/* back to top */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  padding: 1vw;
+  border-radius: 50%;
+  cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
+  background-color: #fff8e5;
+  z-index: 999;
+}
+
+#to-top-btn {
+  width: 1vw;
+  height: 1vw;
+}
