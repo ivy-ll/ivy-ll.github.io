@@ -32,7 +32,7 @@
 
 <!-- site start -->
 <div class="intro">
-  <h1 id="intro-text" class="header-text">hi there! i'm ivy lin. welcome to my personal website :)</h1>
+  <h1 id="hello-text" class="header-text">hi there! i'm ivy lin. welcome to my personal website :)</h1>
 
   <img id="pfp-me" class="pfp" src="files/home/pfp.png" alt="pfp">
   <a href="https://www.instagram.com/ivy.ll/" target="_blank"><button id="pfp-button"></button></a>
@@ -42,26 +42,44 @@
 </div>
 
 <div>
-  <h1 id="footnote-text" class="header-text"> follow me on <br> instagram :3 </h1>
-  <img id="footnote-arr" src="files/home/arrowR.gif" alt="arrow gif">
+  <h1 id="insta-text" class="header-text"> follow me on <br> instagram :3 </h1>
+  <img id="insta-arr" src="files/home/arrowR.gif" alt="arrow gif">
 </div>
 
-<div class="content">
-  <p>rotmaxxer with a dog</p>
-  <p>3rd year computer science student with a keen interest in video games, webtoons, and animals.</p>
-  <p>
-    picture this: it's the summer of 2024. the sun is shining, the birds are chirping, the mosquitoes and mosquitoing,
-    and i, as an academic victim, have spent all of my may and july rotmaxxing after having my soul sucked out of me by
-    *･:ﾟ✧ university ✧ﾟ:･*
-    <br>
-    but don't worry! now, feeling mildly rejuvenated, i've poured my heart and (what's remaining of my) soul into this
-    website for you to cringe at. so please take a look around and enjoy your stay~
-  </p>
+<div class="container">
+  <div class="intro-sect">
+    <p>
+      <span class="intro-text"></span>
+    </p>
+  </div>
+
+  <div class="intro-sect-bg"></div>
 </div>
 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-
-<img src="files/sadpy.png" alt="idk what this is yet">
+<script>
+  var typed = new Typed(".intro-text", {
+    strings:["picture this: it's the summer of 2024." +
+    "<br>" +
+    "the sun is shining, the birds are chirping, the mosquitoes and mosquitoing " +
+    "and i, as an academic victim, have spent all of may and july rotmaxxing after having the life sucked out of me by " +
+    "*･:ﾟ✧ university ✧ﾟ:･*\n" +
+    " <br>" +
+    "<br>" +
+    "but don't worry!" +
+    "<br>" +
+    "now, feeling mildly rejuvenated, i've poured my heart and <s>what's remaining of my</s> soul into this " +
+    "website for you to cringe at. " +
+    "<br>" +
+    "so please take a look around and enjoy your stay~"],
+    typeSpeed: 50,
+    pause: true,
+    loop: false,
+    showCursor: true,
+    cursorChar: "|"
+  })
+</script>
 
 <div class="footnote">
   <p>this website was made with the blood sweat and tears of a sleep-deprived uni student (send <s>help</s> caffeine)</p>
