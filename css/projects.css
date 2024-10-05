@@ -49,62 +49,30 @@
 /* project description */
 .prj-info {
   display: flex;
-  height: 35vh;
-  width: 30vw;
-  margin-top: -42%;
-  margin-left: 5%;
-  position: absolute;
-  z-index: 2;
+  width: 75%;
+  padding: 1% 5% 1% 5%;
+  margin: 5% auto;
+  border-radius: 5rem;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f8cbce;
+  box-shadow: 0 0 1vw rgb(248, 203, 206);
 }
 
 #prj-info-txt {
   color: #2b372a;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-weight: bold;
-  text-shadow: 4px 4px #e2a9af;
+  text-align: justify;
+  text-shadow: 0.1vw 0.1vw #e2a9af;
 }
 
-/* project background */
-.bg-container{
-  display: flex;
-  align-items: center;
-}
-.prj-bg {
-  max-width: 40vw;
-  max-height: 40vw;
-  flex: 0 0 auto;
-  position: relative;
+#closing {
+  float: right;
+  text-align: right;
 }
 
-#prj-bg1 {
-  margin-top: -15%;
-  padding-left: 4.5vw;
-  z-index: -1;
-}
-
-#prj-bg2 {
-  max-width: 70vw;
-  max-height: 45vw;
-  margin-top: -8%;
-  padding-left: 8%;
-  z-index: 1;
-}
-
-#prj-bg3 {
-  max-width: 50vw;
-  max-height: 30vw;
-  margin-top: 22.9%;
-  margin-left: -98%;
-  z-index: -1;
-}
-
-#prj-cat {
-  max-width: 10vw;
-  max-height: 10vw;
-  margin-left: -21%;
-  margin-top: 22%;
-  z-index: 1;
-}
 
 
 

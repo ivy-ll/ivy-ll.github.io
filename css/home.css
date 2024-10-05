@@ -90,17 +90,15 @@
   justify-content: center;
   text-align: center;
   vertical-align: middle;
-  box-shadow: 0 0 1vw rgb(248, 203, 206);
-}
-
-.intro-sect {
   background-color: #f8cbce;
+  box-shadow: 0 0 1vw rgb(248, 203, 206);
 }
 
 .intro-text {
   color: #2b372a;
   font-size: 2vw;
   font-weight: bold;
+  text-shadow: 0.2vw 0.2vw #e2a9af;
 }
 
 /* footnote */
