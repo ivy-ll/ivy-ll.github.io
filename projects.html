@@ -8,6 +8,11 @@
 
   <link rel="icon" href="/files/projects/proj-icon.ico" sizes="any">
 
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
 </head>
 <body>
 
@@ -19,17 +24,6 @@
   <a class="navbar-text" href="bean.html"> [beanstagram] </a>
 </div>
 
-<!-- header -->
-<div class="header">
-  <h1 class="header-text">LFJ</h1>
-</div>
-
-<div class="ham-container">
-  <img id="sad-ham1" class="sad-ham" src="/files/projects/sadham.png" alt="sad hamster">
-  <img id="sad-ham2" class="sad-ham" src="/files/projects/sadham.png" alt="sad hamster">
-</div>
-
-<h2 id="proj-head" class="header-text"> (looking for job) </h2>
 
 <!-- contact -->
 <div class="contact">
@@ -38,8 +32,20 @@
   <a class="contact-text" href="https://www.linkedin.com/in/ivy-lin-765165269/" target="_blank"> [connect with me on linkedin] </a>
 </div>
 
+<!-- header -->
+<div class="header-sect">
+  <div class="header">
+    <img class="sad-ham" src="/files/projects/sadham.png" alt="sad hamster">
+    <h1 class="header-text">LFJ</h1>
+    <img class="sad-ham" src="/files/projects/sadham.png" alt="sad hamster">
+  </div>
+  <span id="proj-head" class="header-text"> (looking for job) </span>
+
+
+</div>
+
 <!-- to the top button -->
-<script src="/js/goto.js"></script>
+<script src="/js/libraries/goto.js"></script>
 <script src="/js/toTopBtn.js"></script>
 <a class="back-to-top" href="#">
   <img src="/files/toTopBtn.png" alt="arrow" id="to-top-btn">
@@ -47,7 +53,7 @@
 
 <div class="container">
   <div class="prj-info">
-    <p id="prj-info-txt">
+    <p class="reg-text prj-info-txt">
       despite being halfway into my cs degree, i unfortunately have not spent much time attempting to build projects
       on my own. <s>#ihavenocodingexperienceplshelp</s> something about needing to start from scratch with nothing but
       my own ideas and a search engine that knows no bounds to how much info it can provide (i love the internet...)
@@ -55,7 +61,7 @@
       my career where <s>i need a job</s> i have a slightly better understanding of how to start projects! thus, i'll
       be posting updates on my exciting journey to <s>finally get a job</s> grow as a programmer :)<br>
       <br>
-      <span id="closing">
+      <span class="reg-text closing">
         locking in,
         <br>
         ivy (ง •̀_•́)ง
@@ -65,12 +71,97 @@
 </div>
 
 <!-- projects list -->
-<p>currently working on...</p>
-<a class="curr-proj-link" href="https://github.com/ivy-ll/ivy-ll.github.io">[link to project repo]</a>
+<script src="/js/libraries/swiper-bundle.min.js"></script>
+<script src="/js/imgSlider.js"></script>
 
-<p>up next...</p>
+<div class="container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
 
-<p>past projects...</p>
+      <div class="swiper-slide past-proj reg-text">
+        <span class="slide-title">[past projects]</span>
+        <div class="proj-item">
+          <div class="proj-head">
+            <span class="proj-title">give me a project</span>
+            <a class="proj-link" href="https://github.com/ivy-ll/give-me-a-project" target="_blank">
+              <img class="github-icon" src="/files/projects/githubIcon.png" alt="github">
+            </a>
+          </div>
+          <div class="line"></div>
+          <span class="proj-desc">
+            a beginner-friendly coding project generator; i made this with my sister all the way back in the pandemic
+            when she dragged me along to a virtual hackathon. at the time, i had 0 idea how she created the front end
+            but i thought was super cool. my silly little highschool self was just responsible for scraping the data
+            for the generator in python.
+          </span>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-head">
+            <span class="proj-title">valorant xp calculator</span>
+            <a class="proj-link" href="https://github.com/ivy-ll/ivy-ll.github.io" target="_blank">
+              <img class="github-icon" src="/files/projects/githubIcon.png" alt="github">
+            </a>
+          </div>
+          <div class="line"></div>
+          <span class="proj-desc">
+            as the name suggests, it calculates xp in valorant; my first solo project ever... definitely a lot to learn
+            from this one LOL. this was made during a software construction course using java for the backend and java
+            gui swing for the frontend (unfinished T_T). because it's about a game i've poured hours into and the
+            application is one i personally want to have, i have plans to revisit it in the future, potentially
+            recreating it in python using machine learning and a valorant tracker api.
+          </span>
+        </div>
+      </div>
+
+      <div class="swiper-slide curr-proj reg-text">
+        <span class="slide-title">[currently working on]</span>
+        <div class="proj-head">
+          <span class="proj-title">give me a project</span>
+          <a class="proj-link" href="https://github.com/ivy-ll/ivy-ll.github.io" target="_blank">
+            <img class="github-icon" src="/files/projects/githubIcon.png" alt="github">
+          </a>
+        </div>
+        <div class="line"></div>
+        <span class="proj-desc">
+          obviously, no aspiring cs student's life is complete without struggling over making a personal website
+          from scratch... it's almost like a rite of passage. this website took me a little too long to get going;
+          since i wanted it to hold more than just some personal info and projects, i spent many hours planning out
+          content and displays in a way that i felt had some of my personality in it
+          <s>i sure do hope my lack of professionality doesn't come back to bite me...</s>
+        </span>
+        <img class="proj-pic" src="/files/projects/graphicDesCat.png" alt="graphicDesCat">
+      </div>
+
+      <div class="swiper-slide future-pro reg-text">
+        <span class="slide-title">[up next...]</span>
+        <div class="proj-item">
+          <div class="line"></div>
+          <span class="proj-title">kpop dance video generator</span>
+          <span class=" proj-desc">
+            this summer i went down an insane rabbit hole for kpop, so much that i want to pick up kpop dance and learn
+            choreography (for fun because watching videos of myself dance is the MOST humbling experience). the problem?
+            there are so many to choose from and searching for them takes time. i figured since i want to learn react
+            and javascript in general, this would be a great project idea :)</span>
+        </div>
+
+        <div class="proj-item">
+          <span class="proj-title">valorant player vod suggester</span>
+          <div class="line"></div>
+          <span class="proj-desc">
+            another valorant related project (can you tell what my favourite game is yet?) that was inspired by my
+            personal experiences as a player. i am a ranked FIEND. the amount of mental stimulation <s>and torture</s>
+            competitive valorant gives me has made me love the process of improving at the game. i also love watching
+            streamers (shout out tarik) play at a high level and coincidentally, one thing lots of pros + coaches say
+            players should do is watch vods of other players theye admire! thus, i want an app that helps players (me)
+            find pro players to watch :3
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
