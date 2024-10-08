@@ -1,0 +1,278 @@
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 1px dotted red;
+}
+
+.container {
+  padding: 0 9% 0 9%;
+}
+
+.intro-container,
+.webtoons-container,
+.game-container {
+  padding-bottom: 5%;
+}
+
+/* intro */
+.intro-container{
+  width: 100%;
+  height: 50vw;
+  gap: 2%;
+  aspect-ratio: 1 / 1;
+  flex-direction: column;
+}
+
+.intro,
+.recent-interest {
+  width: 29%;
+  height: 49%;
+}
+
+
+.intro {
+}
+
+.recent-interest {
+}
+
+
+/* pics */
+.pics-container {
+  width: 69%;
+  height: 100%;
+  gap: 0.01%;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.pics {
+  width: 20%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  flex-direction: row;
+}
+
+
+/* webtoons */
+.webtoons-container {
+  width: 100%;
+  height: 40vw;
+  gap: 0;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.webtoons-desc {
+  width: 24%;
+  height: 100%;
+  align-self: flex-start;
+}
+
+.webtoon-slider {
+  width: 74%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.webtoon-slide {
+  position: relative;
+  width: 32%;
+  height: 80%;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.webtoon-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.webtoon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.webtoon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+}
+
+.webtoon-overlay:hover {
+  opacity: 1;
+  transition: 0.9s ease;
+}
+
+.webtoon-title {
+  width: 100%;
+  height: 20%;
+}
+
+.webtoon-info {
+  width: 100%;
+  height: 80%;
+}
+
+.overlay-line {
+  width: 80%;
+  border: 1px solid #2c2f4c;
+}
+
+
+/* games */
+.games-container {
+  width: 100%;
+  max-height: 45vw;
+  gap: 0;
+  justify-content: space-between;
+  align-content: space-around;
+  background: #2b372a;
+}
+
+.game-player {
+  width: 29%;
+  height: 100%;
+  justify-content: space-around;
+  align-content: space-evenly;
+  flex-direction: column;
+  padding: 2% 0 2% 0;
+}
+
+.game-player-pic {
+  width: 83%;
+  aspect-ratio: 1 / 1;
+}
+
+.game-player-ui {
+  height: 23%;
+  flex-direction: column;
+}
+
+.game-player-title {
+  height: 25%;
+}
+
+.game-player-genre {
+  height: 15%;
+}
+
+.game-player-hrs {
+  height: 10%;
+}
+
+.game-player-ui-buttons {
+  height: 50%;
+}
+
+.game-player-rating {
+  height: 14%;
+}
+
+.game-player-last-played {
+  height: 14%;
+}
+
+.game-playlist {
+  width: 69%;
+  height: 100%;
+  overflow-y: auto;
+  gap: 1%;
+  padding: 0 2% 2% 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.playlist-title,
+.game {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.playlist-title {
+  height: 20%;
+}
+
+.playlist-line {
+  width: 100%;
+  border: 1px solid #758374;
+}
+
+.game:hover {
+  background-color: #f1f1f1;
+}
+
+.game-pic {
+  width: 10%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.game-pic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+
+.game-desc {
+  width: 30%;
+  height: 100%;
+}
+
+.game-title {
+  width: 100%;
+  height: 50%;
+}
+
+.game-dev {
+  width: 100%;
+  height: 50%;
+}
+
+.game-genre {
+  width: 35%;
+  height: 100%;
+}
+
+.game-last-played {
+  width: 20%;
+  height: 100%;
+}
+
+.game-hrs {
+  width: 5%;
+  height: 100%;
+}
