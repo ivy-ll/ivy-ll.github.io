@@ -66,7 +66,7 @@ body {
 
 .contact-text:hover {
   color: #2b372a;
-  text-shadow: 4px 4px #fff5c8;
+  text-shadow: 0.15vw 0.15vw #e2a9af;
   transition: 0.5s ease;
 }
 
