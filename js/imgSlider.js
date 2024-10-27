@@ -1,29 +1,11 @@
-const swiper = new Swiper('.swiper', {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  initialSlide: 2,
-  speed: 600,
-  slidesPerView: 1,
-  spaceBetween: 30,
+new Swiper('.webtoons-container', {
+  loop: true,
 
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 80,
-    depth: 350,
-    modifier: 1,
-    slideShadows: true,
-  },
-
-  on: {
-    click(event) {
-      swiper.slideTo(this.clickedIndex);
-    },
-  },
-
-
+  // pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
   },
 
   // Navigation arrows
@@ -31,4 +13,5 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
 });

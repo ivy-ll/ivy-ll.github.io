@@ -78,12 +78,14 @@ html {
   cursor: url(https://cdn.custom-cursor.com/db/18959/32/cute-cat-shell-pointer.png), pointer;
   background-color: #fff8e5;
   z-index: 999;
+  aspect-ratio: 1 / 1;
 }
 
 #to-top-btn {
   width: 1vw;
   height: 1vw;
   aspect-ratio: 1 / 1;
+  display: block;
 }
 
 .back-to-top:hover {

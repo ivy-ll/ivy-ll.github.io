@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/life.css">
 
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
   <link rel="icon" href="/files/life/life-icon.ico" sizes="any">
 </head>
 <body>
@@ -25,6 +30,10 @@
   <img src="/files/toTopBtn.png" alt="arrow" id="to-top-btn">
 </a>
 
+<!-- swiper stuff -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="imgSlider.js"></script>
+
 <!-- site start -->
 <div class="header">
   <h1 class="header-text">my hobbies  ₍ᐢ•ﻌ•ᐢ₎*:・ﾟ </h1>
@@ -32,158 +41,205 @@
 
 <div class="container">
   <div class="intro-container">
-    <div class="intro"></div>
+    <div class="intro">
+      <div class="intro-title-bar">
+        <span class="intro-title-text">about me >_<</span>
+      </div>
 
-    <div class="recent-interest"></div>
+      <div class="intro-body">
+        <span class="intro-text">
+          chronically online university student whose entire personality is games and my dog...
+        </span>
+        <span class="intro-text">
+          i also really enjoy nature and treating myself to good food :)
+        </span>
+        <span class="intro-text">
+          (occasionally, i touch grass)
+        </span>
+      </div>
+    </div>
+
+    <div class="recent-interests">
+      <div class="recent-interests-header">
+        <span class="recent-interests-title-text">recent interests ^_^</span>
+      </div>
+
+      <div class="recent-interests-body">
+        <span class="recent-interests-text">
+          currently diving DEEP into kpop!
+          <br>
+          some groups i love are aespa, newjeans, le sserafim, twice... yes i have very basic taste
+        </span>
+        <span class="recent-interests-text">
+          + i love dragon boating and recently gained a strong desire to become a gym rat :p
+        </span>
+      </div>
+    </div>
+
+<!--    <div class="webtoons-suggestions">-->
+<!--      <div class="webtoons-header">-->
+<!--        <span class="webtoons-title-text">webtoon suggestions</span>-->
+<!--      </div>-->
+
+<!--      <div class="webtoons-container">-->
+<!--        <div class="webtoon-slider swiper-wrapper">-->
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-overlay">-->
+<!--              <div class="webtoon-title">-->
+<!--                solo leveling-->
+<!--              </div>-->
+<!--              <div class="overlay-line"></div>-->
+<!--              <div class="webtoon-info">-->
+<!--                ???-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/solo-leveling.png" alt="solo leveling">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-overlay">-->
+<!--              <div class="webtoon-title">-->
+<!--                unordinary-->
+<!--              </div>-->
+<!--              <div class="overlay-line"></div>-->
+<!--              <div class="webtoon-info">-->
+<!--                ???-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/unordinary.png" alt="unordinary">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-overlay">-->
+<!--              <div class="webtoon-title">-->
+<!--                sweet home-->
+<!--              </div>-->
+<!--              <div class="overlay-line"></div>-->
+<!--              <div class="webtoon-info">-->
+<!--                ???-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/sweet-home.png" alt="sweet home">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-title">-->
+<!--              bastard-->
+<!--            </div>-->
+<!--            <div class="webtoon-info">-->
+<!--              ???-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/bastard.png" alt="bastard">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-title">-->
+<!--              villains are destined to die-->
+<!--            </div>-->
+<!--            <div class="webtoon-info">-->
+<!--              ???-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/villains-are-destined-to-die.png" alt="villains are destined to die">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-title">-->
+<!--              hand jumper-->
+<!--            </div>-->
+<!--            <div class="webtoon-info">-->
+<!--              ???-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/hand-jumper.png" alt="hand jumper">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-title">-->
+<!--              your eternal lies-->
+<!--            </div>-->
+<!--            <div class="webtoon-info">-->
+<!--              ???-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/your-eternal-lies.png" alt="your eternal lies">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="webtoon-slide swiper-slide">-->
+<!--            <div class="webtoon-title">-->
+<!--              concubine walkthrough-->
+<!--            </div>-->
+<!--            <div class="webtoon-info">-->
+<!--              ???-->
+<!--            </div>-->
+
+<!--            <div class="webtoon-pic">-->
+<!--              <img class="webtoon-img" src="files/life/webtoons/concubine-walkthrough.png" alt="concubine walkthrough">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="swiper-pagination"></div>-->
+<!--          <div class="swiper-button-prev"></div>-->
+<!--          <div class="swiper-button-next"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div class="pics-container">
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-      <div class="pics"></div>
-    </div>
-  </div>
-
-  <div class="webtoons-container">
-    <div class="webtoons-desc">
-      <p>my love for webtoons is embarassingly strong,
-        so here's a list of some popular ones that i recommend for beginners :)</p>
-    </div>
-
-    <div class="webtoon-slider">
-      <div class="webtoon-slide">
-        <div class="webtoon-overlay">
-          <div class="webtoon-title">
-            solo leveling
-          </div>
-          <div class="overlay-line"></div>
-          <div class="webtoon-info">
-            ???
-          </div>
-        </div>
-
-        <div class="webtoon-pic">
-          <img class="webtoon-img" src="files/life/webtoons/solo-leveling.png" alt="solo leveling">
-        </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img1.jpg" alt="img1">
       </div>
-
-      <div class="webtoon-slide">
-        <div class="webtoon-overlay">
-          <div class="webtoon-title">
-            unordinary
-          </div>
-          <div class="overlay-line"></div>
-          <div class="webtoon-info">
-            ???
-          </div>
-        </div>
-
-        <div class="webtoon-pic">
-          <img class="webtoon-img" src="files/life/webtoons/unordinary.png" alt="unordinary">
-        </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img2.jpg" alt="img2">
       </div>
-
-      <div class="webtoon-slide">
-        <div class="webtoon-overlay">
-          <div class="webtoon-title">
-            sweet home
-          </div>
-          <div class="overlay-line"></div>
-          <div class="webtoon-info">
-            ???
-          </div>
-        </div>
-
-        <div class="webtoon-pic">
-          <img class="webtoon-img" src="files/life/webtoons/sweet-home.png" alt="sweet home">
-        </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img3.jpg" alt="img3">
       </div>
-
-      <!--      <div class="webtoon-slide">-->
-      <!--        <div class="webtoon-title">-->
-      <!--          bastard-->
-      <!--        </div>-->
-      <!--        <div class="webtoon-info">-->
-      <!--          ???-->
-      <!--        </div>-->
-
-      <!--        <div class="webtoon-pic">-->
-      <!--          <img class="webtoon-img" src="files/life/bastard.png" alt="bastard">-->
-      <!--        </div>-->
-      <!--      </div>-->
-
-      <!--      <div class="webtoon-slide">-->
-      <!--        <div class="webtoon-title">-->
-      <!--          eleceed-->
-      <!--        </div>-->
-      <!--        <div class="webtoon-info">-->
-      <!--          ???-->
-      <!--        </div>-->
-
-      <!--        <div class="webtoon-pic">-->
-      <!--          <img class="webtoon-img" src="files/life/eleceed.png" alt="eleceed">-->
-      <!--        </div>-->
-      <!--      </div>-->
-
-      <!--      <div class="webtoon-slide">-->
-      <!--        <div class="webtoon-title">-->
-      <!--          villains are destined to die-->
-      <!--        </div>-->
-      <!--        <div class="webtoon-info">-->
-      <!--          ???-->
-      <!--        </div>-->
-
-      <!--        <div class="webtoon-pic">-->
-      <!--          <img class="webtoon-img" src="files/life/villains-are-destined-to-die.png" alt="villains are destined to die">-->
-      <!--        </div>-->
-      <!--      </div>-->
-
-      <!--      <div class="webtoon-slide">-->
-      <!--        <div class="webtoon-title">-->
-      <!--          hand jumper-->
-      <!--        </div>-->
-      <!--        <div class="webtoon-info">-->
-      <!--          ???-->
-      <!--        </div>-->
-
-      <!--        <div class="webtoon-pic">-->
-      <!--          <img class="webtoon-img" src="files/life/hand-jumper.png" alt="hand jumper">-->
-      <!--        </div>-->
-      <!--      </div>-->
-
-      <!--      <div class="webtoon-slide">-->
-      <!--        <div class="webtoon-title">-->
-      <!--          your eternal lies-->
-      <!--        </div>-->
-      <!--        <div class="webtoon-info">-->
-      <!--          ???-->
-      <!--        </div>-->
-
-      <!--        <div class="webtoon-pic">-->
-      <!--          <img class="webtoon-img" src="files/life/your-eternal-lies.png" alt="your eternal lies">-->
-      <!--        </div>-->
-      <!--      </div>-->
-
-      <!--      <div class="webtoon-slide">-->
-      <!--        <div class="webtoon-title">-->
-      <!--          concubine walkthrough-->
-      <!--        </div>-->
-      <!--        <div class="webtoon-info">-->
-      <!--          ???-->
-      <!--        </div>-->
-
-      <!--        <div class="webtoon-pic">-->
-      <!--          <img class="webtoon-img" src="files/life/concubine-walkthrough.png" alt="concubine walkthrough">-->
-      <!--        </div>-->
-      <!--      </div>-->
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img4.jpg" alt="img4">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img5.jpg" alt="img5">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img6.jpg" alt="img6">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img7.jpg" alt="img7">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img8.jpg" alt="img8">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img9.jpg" alt="img9">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img10.jpg" alt="img10">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img11.jpg" alt="img11">
+      </div>
+      <div class="pics">
+        <img class="irl-img" src="files/life/irl/img12.jpg" alt="img12">
+      </div>
     </div>
   </div>
 
@@ -207,7 +263,7 @@
         <div class="game-player-hrs">
           <div class="game-player-progress">
             <div class="game-player-progress-bar">
-              <div class="game-player-progress-point"></div>
+              <div class="game-player-progression"></div>
             </div>
           </div>
           <div class="game-player-progress-text">
@@ -215,34 +271,41 @@
             <span class="game-player-hrs-text game-player-text">300:00</span>
           </div>
         </div>
-        <div class="game-player-ui-buttons">
-          <img class="game-player-button" src="/files/life/games/player%20ui/skipPrevButton.png" alt="skip prev">
-          <img class="game-player-button" src="/files/life/games/player%20ui/prevButton.png" alt="prev">
-          <img class="game-player-button" src="/files/life/games/player%20ui/playButton.png" alt="play">
-          <img class="game-player-button" src="/files/life/games/player%20ui/nextButton.png" alt="next">
-          <img class="game-player-button" src="/files/life/games/player%20ui/skipNextButton.png" alt="skip next">
-        </div>
 
+        <div class="game-player-ui-buttons">
+          <div class="prev-button">
+            <img class="game-player-button" src="/files/life/games/player%20ui/prev.png" alt="prev">
+          </div>
+          <div class="play-button">
+            <img class="game-player-button" src="/files/life/games/player%20ui/play.png" alt="play">
+          </div>
+          <div class="next-button">
+            <img class="game-player-button" src="/files/life/games/player%20ui/next.png" alt="next">
+          </div>
+        </div>
       </div>
 
       <div class="game-player-info game-player-text">
-        genre:
-        souls-like shooter rpg
+        <div class="game-player-genre">genre:</div>
+        <div class="game-player-genre-text">souls-like shooter rpg</div>
       </div>
 
-      <div class="game-player-last-played game-player-text">
-        <p>last played</p>
-        <p>fortnite</p>
+      <div class="game-player-queue game-player-text">
+        <div class="game-player-up-next">up next:</div>
+        <div class="game-player-up-next-text">valorant</div>
       </div>
     </div>
 
-    <div class="game-playlist">
+    <div class="game-playlist game-player-text">
 
       <div class="playlist-title">
         <div class="playlist-pic">
-          <img class="playlist-pic-img" src="/files/life/games/player%20ui/playlistPic.png" alt="playlistPic">
+          <img class="playlist-pic-img" src="/files/life/games/playlistPic.png" alt="playlistPic">
         </div>
-        <div class="playlist-title-text"> games that have ruined my social life </div>
+        <div class="playlist-title-info">
+          <div class="playlist-title-text">degens only ໒( ⇀ ‸ ↼ )७</div>
+          <div class="playlist-author">by ivy</div>
+        </div>
       </div>
 
       <div class="playlist-labels">
@@ -268,7 +331,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            valorant
+            <a class="game-title-text game-player-text" href="https://www.remnantgame.com/en/" target="_blank">
+              valorant
+            </a>
           </div>
           <div class="game-dev">
             riot games
@@ -291,7 +356,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            realm of the mad god
+            <a class="game-title-text game-player-text" href="https://www.realmofthemadgod.com/" target="_blank">
+              realm of the mad god
+            </a>
           </div>
           <div class="game-dev">
             deca games
@@ -301,7 +368,7 @@
           bullet-hell mmorpg
         </div>
         <div class="game-last-played">
-          2020
+          oct 2020
         </div>
         <div class="game-hrs">
           1000+
@@ -314,7 +381,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            minecraft
+            <a class="game-title-text game-player-text" href="https://www.minecraft.net/en-us" target="_blank">
+              minecraft
+            </a>
           </div>
           <div class="game-dev">
             mojang
@@ -337,7 +406,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            stardew valley
+            <a class="game-title-text game-player-text" href="https://www.stardewvalley.net/" target="_blank">
+              stardew valley
+            </a>
           </div>
           <div class="game-dev">
             concerned ape
@@ -360,7 +431,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            dont starve (together)
+            <a class="game-title-text game-player-text" href="https://www.klei.com/games/dont-starve-together" target="_blank">
+              dont starve (together)
+            </a>
           </div>
           <div class="game-dev">
             klei entertainment
@@ -370,33 +443,10 @@
           wilderness survival
         </div>
         <div class="game-last-played">
-          ???
+          june 2024
         </div>
         <div class="game-hrs">
-          ???
-        </div>
-      </div>
-
-      <div class="game">
-        <div class="game-pic">
-          <img class="game-pic-img" src="/files/life/games/tetris.png" alt="tetris">
-        </div>
-        <div class="game-desc">
-          <div class="game-title">
-            tetris (battle)
-          </div>
-          <div class="game-dev">
-            alexey pajitnov
-          </div>
-        </div>
-        <div class="game-genre">
-          puzzle strategy
-        </div>
-        <div class="game-last-played">
-          may 2024
-        </div>
-        <div class="game-hrs">
-          100
+          315
         </div>
       </div>
 
@@ -406,7 +456,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            terraria
+            <a class="game-title-text game-player-text" href="https://terraria.org/" target="_blank">
+              terraria
+            </a>
           </div>
           <div class="game-dev">
             re-logic
@@ -425,11 +477,38 @@
 
       <div class="game">
         <div class="game-pic">
+          <img class="game-pic-img" src="/files/life/games/tetris.png" alt="tetris">
+        </div>
+        <div class="game-desc">
+          <div class="game-title">
+            <a class="game-title-text game-player-text" href="https://tetr.io/" target="_blank">
+              tetrio
+            </a>
+          </div>
+          <div class="game-dev">
+            osk, alexey pajitnov
+          </div>
+        </div>
+        <div class="game-genre">
+          puzzle strategy
+        </div>
+        <div class="game-last-played">
+          may 2024
+        </div>
+        <div class="game-hrs">
+          60
+        </div>
+      </div>
+
+      <div class="game">
+        <div class="game-pic">
           <img class="game-pic-img" src="/files/life/games/hollowknight.png" alt="hollow knight">
         </div>
         <div class="game-desc">
           <div class="game-title">
-            hollow knight
+            <a class="game-title-text game-player-text" href="https://www.hollowknight.com/" target="_blank">
+              hollow knight
+            </a>
           </div>
           <div class="game-dev">
             team cherry
@@ -452,7 +531,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            fortnite
+            <a class="game-title-text game-player-text" href="https://www.fortnite.com/?lang=en-US" target="_blank">
+              fortnite
+            </a>
           </div>
           <div class="game-dev">
             epic games
@@ -475,7 +556,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            muse dash
+            <a class="game-title-text game-player-text" href="https://cdn.peroperogames.com/" target="_blank">
+              muse dash
+            </a>
           </div>
           <div class="game-dev">
             peropero
@@ -498,10 +581,12 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            plate up
+            <a class="game-title-text game-player-text" href="https://numskullgames.com/game/plateup/" target="_blank">
+              plate up
+            </a>
           </div>
           <div class="game-dev">
-            yogscast, numskull games, pm studios
+            yogscast, numskull games
           </div>
         </div>
         <div class="game-genre">
@@ -521,7 +606,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            cult of the lamb
+            <a class="game-title-text game-player-text" href="https://www.cultofthelamb.com/" target="_blank">
+              cult of the lamb
+            </a>
           </div>
           <div class="game-dev">
             massive monster
@@ -544,7 +631,9 @@
         </div>
         <div class="game-desc">
           <div class="game-title">
-            baba is you
+            <a class="game-title-text game-player-text" href="https://hempuli.com/baba/" target="_blank">
+              baba is you
+            </a>
           </div>
           <div class="game-dev">
             mp2 games, arvi teikari
