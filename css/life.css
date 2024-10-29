@@ -46,6 +46,7 @@ div {
   align-content: space-between;
   border: 2px solid #f3cbce;
   border-radius: 10px;
+  box-shadow: 0 0 0.2vw #f3cbce;
 }
 
 .intro-title-bar,
@@ -185,6 +186,7 @@ div {
   align-content: space-evenly;
   background-color: #f3cbce;
   border-radius: 10px;
+  box-shadow: 0 0 0.2vw #f3cbce;
 }
 
 .pics {
@@ -217,6 +219,7 @@ div {
   transition: background 0.001s ease;
   padding: 0.75%;
   border-radius: 10px;
+  box-shadow: 0 0 0.2vw #182016;
 }
 
 .game-player {
